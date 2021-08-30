@@ -4,7 +4,8 @@ public class Main	{
 		// instancia a classe
 		Pessoa eu = new Pessoa();
 		Pessoa tu = new Pessoa();		
-		Carro fusca = new Carro("fusquinha", 1025.63f);	
+		//Carro fusca = new Carro();
+		Bicicleta bike = new Bicicleta();
 		/*
 		* o atributo idade esta definida com a palavra final
 		* significa que nao pode ser atribuido um valor a esse atributo
@@ -25,6 +26,8 @@ public class Main	{
 
 		System.out.println(eu.imc);
 
-		System.out.println("Cor: "+fusca.cor+" Modelo: "+fusca.modelo+" Peso: "+fusca.peso);
+		//System.out.println("Cor: "+fusca.cor+" Modelo: "+fusca.modelo+" Peso: "+fusca.peso);
+		
+		bike.printBicicleta();
 	}
 }
