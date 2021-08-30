@@ -15,21 +15,19 @@ public class Cap3Exercicio02 {
     public static void main(String[] args) {
         // TODO code application logic here
         ContaBancaria conta1 = new ContaBancaria();
-        conta1.nome = "João";
-        conta1.saldo = 5500.00;
+        conta1.setNome("João");
         
         ContaBancaria conta2 = new ContaBancaria();
-        conta2.nome = "Maria";
-        conta2.saldo = 10000.00;
+        conta2.setNome("Maria");
         
-        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta1.nome, conta1.saldo);
-        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta2.nome, conta2.saldo);
+        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta1.getNome(), conta1.getSaldo());
+        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta2.getNome(), conta2.getSaldo());
                 
         conta1.depositar(1000.00);
         conta2.retirar(1000.00);
         
-        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta1.nome, conta1.saldo);
-        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta2.nome, conta2.saldo);
+        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta1.getNome(), conta1.getSaldo());
+        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta2.getNome(), conta2.getSaldo());
         
     }
     

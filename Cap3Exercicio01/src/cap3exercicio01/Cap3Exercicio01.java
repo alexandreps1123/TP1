@@ -25,5 +25,4 @@ public class Cap3Exercicio01 {
         lampada2.mostrarEstado();
         
     }
-    
 }

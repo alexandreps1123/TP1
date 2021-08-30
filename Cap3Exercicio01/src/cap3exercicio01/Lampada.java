@@ -3,7 +3,7 @@ package cap3exercicio01;
 public class Lampada {
     
     //Atributos
-    public boolean estadoDaLampada;
+    private boolean estadoDaLampada;
     
     //Metodos
     public void acender(){
@@ -21,5 +21,4 @@ public class Lampada {
             System.out.println("Lampada apagada.");
         }
     }
-    
 }
