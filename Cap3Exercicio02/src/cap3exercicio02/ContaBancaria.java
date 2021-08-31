@@ -5,6 +5,11 @@ public class ContaBancaria {
     //Atributos
     private String nome;
     private double saldo;
+    public static String nomeBanco = "Banco da Classe";
+    
+    //Uso do modificador static
+    public String escopoDeInstancia;
+    public static String escopoDeClasse;
     
     //Metodos    
     public void setNome(String nome){
