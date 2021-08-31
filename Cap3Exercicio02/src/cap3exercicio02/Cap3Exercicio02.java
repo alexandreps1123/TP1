@@ -34,10 +34,10 @@ public class Cap3Exercicio02 {
         System.out.println(conta2.escopoDeInstancia);
                         
         conta1.depositar(1000.00);
-        System.out.println(conta1.toString());
+        System.out.println(conta1.myToString());
         
         conta2.retirar(1000.00);
-        System.out.println(conta2.toString());
+        System.out.println(conta2.myToString());
         
         conta3.depositar(10.00);
         System.out.println(conta3.toString());

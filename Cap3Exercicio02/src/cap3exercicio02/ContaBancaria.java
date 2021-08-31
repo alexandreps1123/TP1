@@ -51,7 +51,7 @@ public class ContaBancaria {
     }
     
     //Formatação dos atributos
-    public String toString(){
+    public String myToString(){
         String conta = "";
         conta = conta + "Nome: " + nome + "\n";
         conta = conta + "Saldo: " + saldo + "\n";
