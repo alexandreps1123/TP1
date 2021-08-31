@@ -14,30 +14,33 @@ public class Cap3Exercicio02 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ContaBancaria.nomeBanco = "Banco do Programador";
         ContaBancaria conta1 = new ContaBancaria();
+        ContaBancaria conta2 = new ContaBancaria("Maria");
+        ContaBancaria conta3 = new ContaBancaria("Camel", 100.00);
+
         conta1.setNome("João");
+        System.out.println("Saldo "+conta1.getNome()+" : "+conta1.getSaldo());
         
-        ContaBancaria conta2 = new ContaBancaria();
-        conta2.setNome("Maria");
-        
+        ContaBancaria.nomeBanco = "Banco do Programador";
         ContaBancaria.escopoDeClasse = "acesso ao escopo de classe";
+        
         conta1.escopoDeInstancia = "acesso ao escopo de instancia pela conta1";
         conta2.escopoDeInstancia = "acesso ao escopo de instancia pela conta2";
         
         System.out.println(ContaBancaria.nomeBanco);
         System.out.println(ContaBancaria.escopoDeClasse);
+        
         System.out.println(conta1.escopoDeInstancia);
         System.out.println(conta2.escopoDeInstancia);
-        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta1.getNome(), conta1.getSaldo());
-        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta2.getNome(), conta2.getSaldo());
-                
+                        
         conta1.depositar(1000.00);
+        System.out.println(conta1.toString());
+        
         conta2.retirar(1000.00);
+        System.out.println(conta2.toString());
         
-        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta1.getNome(), conta1.getSaldo());
-        System.out.printf("Saldo da conta do(a) %s é %.2f\n", conta2.getNome(), conta2.getSaldo());
-        
+        conta3.depositar(10.00);
+        System.out.println(conta3.toString());
     }
     
 }
