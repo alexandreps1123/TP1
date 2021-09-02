@@ -2,7 +2,7 @@ package lista3exercicio1;
 
 import java.util.Scanner;
 
-public class Lista3Exercicio1 {
+public class Banco {
 
     public static void main(String[] args) {
         
