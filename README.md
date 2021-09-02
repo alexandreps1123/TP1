@@ -9,7 +9,7 @@ Os respositórios 00 a 15 foram implementados usando o gedit e compilação via 
 * ~$javac <NomeArquivo.java>
 * ~$java NomeArquivo
 
-E o restante dos repositórios estão sendo implementados via Apacha NetBeans IDE 12.4
+E o restante dos diretórios estão sendo implementados via Apacha NetBeans IDE 12.4
 
 Versão JVM
 * java 16.0.2 2021-07-20
