@@ -1,5 +1,7 @@
 package l3e1banco;
 
+import static java.lang.Double.parseDouble;
+import static java.lang.Integer.parseInt;
 import java.util.Scanner;
 
 public class Banco {
@@ -14,10 +16,10 @@ public class Banco {
         
         splitedString = entrada1.split(" ");
         
-        int numeroConta = Integer.parseInt(splitedString[0]);
-        int senha = Integer.parseInt(splitedString[1]);
+        int numeroConta = parseInt(splitedString[0]);
+        int senha = parseInt(splitedString[1]);
         String nome = splitedString[2];
-        double valorInicial = Double.parseDouble(splitedString[3]);
+        double valorInicial = parseDouble(splitedString[3]);
         
         Conta conta1 = new Conta(numeroConta, nome, valorInicial, senha);
         
@@ -26,10 +28,10 @@ public class Banco {
         
         splitedString = entrada2.split(" ");
         
-        numeroConta = Integer.parseInt(splitedString[0]);
-        senha = Integer.parseInt(splitedString[1]);
+        numeroConta = parseInt(splitedString[0]);
+        senha = parseInt(splitedString[1]);
         nome = splitedString[2];
-        valorInicial = Double.parseDouble(splitedString[3]);
+        valorInicial = parseDouble(splitedString[3]);
         
         Conta conta2 = new Conta(numeroConta, nome, valorInicial, senha);
         
