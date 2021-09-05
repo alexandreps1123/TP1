@@ -2,8 +2,14 @@ package formas;
 
 public class Retangulo {
     //atributos
-    private int comprimento = 1;
-    private int largura = 1;
+    private int comprimento;
+    private int largura;
+    
+    //contructor
+    public Retangulo()  {
+        comprimento = 1;
+        largura = 1;
+    }
 
     public void setComprimento(int comprimento){
         if (comprimento > 0 && comprimento < 20)
