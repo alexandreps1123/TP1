@@ -13,6 +13,11 @@ public class Impressora {
     private boolean digitalizadora;
     private boolean copiadora;
     
+    // construtor
+    public Impressora() {
+        
+    }
+    
     //Metodos
     //set modelo
     public void setModelo(String modelo)    {
