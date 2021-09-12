@@ -206,6 +206,58 @@ public class ManipulandoStrings
         System.out.println((int)char1);
         System.out.println((char)numero1);
     }
+    
+    static void descobrindoCaractereSucessorAntecessor()
+    {
+        String str1 = new String("computador");
+        int posicao;
+        char char1 = 'd';
+        posicao = str1.indexOf(char1);
+        
+        System.out.println(posicao);
+        System.out.println(str1.charAt(posicao + 1));
+        System.out.println(str1.charAt(posicao - 1));
+    }
+    
+    static void convertendoMaiusculoMinusculo()
+    {
+        String str1 = new String("computador");
+        char char1 = 'd';
+        
+        System.out.println(str1.toUpperCase());
+        System.out.println(str1.toLowerCase());
+        System.out.println(Character.toUpperCase(char1));
+        System.out.println(Character.toLowerCase(char1));
+    }
+    
+    static void convertendoValorNumericoEmCaractere()
+    {
+        System.out.println(String.valueOf(100));
+        System.out.println(Character.forDigit(15, 16));   
+    }
+    
+    static void convertendoCaracteresEmValorNumerico()
+    {
+        String str1 = new String("5");
+        char char1 = '5';
+        
+        System.out.println(Integer.parseInt(str1));
+        System.out.println(Long.parseLong(str1));
+        System.out.println(Float.parseFloat(str1));
+        System.out.println(Double.parseDouble(str1));
+        System.out.println(Character.digit(char1, 10));
+    }
+    
+    static void verificandoCarateres()
+    {
+        char char1 = '1';
+        
+        System.out.println(Character.isUpperCase(char1));
+        System.out.println(Character.isLowerCase(char1));
+        System.out.println(Character.isLetter(char1));
+        System.out.println(Character.isDigit(char1));
+        System.out.println(Character.isLetterOrDigit(char1));
+    }
 
     public static void main(String[] args) 
     {
@@ -220,7 +272,12 @@ public class ManipulandoStrings
         //posicaoStringDentroOutraString();
         //apagandoInserindoCaracteresString();
         //alterandoCaracteresString();
-        caractereASCII();
+        //caractereASCII();
+        //descobrindoCaractereSucessorAntecessor();
+        //convertendoMaiusculoMinusculo();
+        //convertendoValorNumericoEmCaractere();
+        //convertendoCaracteresEmValorNumerico();
+        //verificandoCarateres();
         
     }
     
