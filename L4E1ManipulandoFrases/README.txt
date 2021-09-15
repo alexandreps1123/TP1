@@ -17,3 +17,13 @@ Duas frases (String), uma em cada linha.
 
 Saída:
 Na primeira linha, o número de palavras da primeira frase (int), e na segunda linha, o número de vogais da segunda frase (int).
+
+Exemplo:
+
+Entrada:
+"Os problemas nunca vão desaparecer."
+"Se andarmos pelos caminhos que outros já percorreram."
+
+Saída:
+5
+19
