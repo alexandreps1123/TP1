@@ -7,7 +7,7 @@ public class Banco {
     public static void main(String[] args) {
         
         String[] splitedString = new String[4];
-        Scanner teclado = new Scanner(System.in);    
+        Scanner teclado = new Scanner(System.in);
         
         //conta1
         String entrada1 = teclado.nextLine();
