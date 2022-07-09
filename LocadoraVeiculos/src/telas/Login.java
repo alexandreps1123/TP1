@@ -47,6 +47,7 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Locação de Veículos");
         setIconImage(new javax.swing.ImageIcon(getClass().getResource("/imagens/carblue-icon-32.png")).getImage());
+        setPreferredSize(new java.awt.Dimension(640, 480));
 
         lblLocadoraVeiculo.setFont(new java.awt.Font("DejaVu Sans", 0, 14)); // NOI18N
         lblLocadoraVeiculo.setText("Locadora de Veículos");
@@ -167,40 +168,40 @@ public class Login extends javax.swing.JFrame {
 
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         
-//        new Menus().setVisible(true);
-//        this.setVisible(false);
+        new Menus().setVisible(true);
+        this.setVisible(false);
        
-        Dictionary<String,String> usuarios = new Hashtable<String,String>();
-        
-        try{
-            for(int i = 0; i < listaFuncionarios.size(); i++){
-                usuarios.put(listaFuncionarios.get(i).getLogin(), listaFuncionarios.get(i).getSenhaFuncionario());
-            }
-        } catch (Exception erro){
-            Logger.getLogger(locadoraveiculo.Login.class.getName()).log(Level.SEVERE, null, erro);
-        }
-        
-        String entradaLogin = txtLogin.getText();
-        String entradaSenha = new String(txtSenha.getPassword());
-        try{
-            String senha = usuarios.get(entradaLogin);
-            if(senha.equals(entradaSenha)){
-                new Menus().setVisible(true);
-                this.setVisible(false);
-            }
-            else{
-                txtSenha.setText("");
-                JOptionPane.showMessageDialog(null,"Senha e/ou Login Incorretos!\n Tente novamente");
-            }
-        } catch (Exception erro) {
-            txtLogin.setText("");
-            txtSenha.setText("");
-            
-            Logger.getLogger(CadastroFuncionario.class.getName()).log(Level.SEVERE, null, erro);
-            
-            JOptionPane.showMessageDialog(null,"Senha e/ou Login Incorretos!\n Tente novamente");
-        }
-        
+//        Dictionary<String,String> usuarios = new Hashtable<String,String>();
+//        
+//        try{
+//            for(int i = 0; i < listaFuncionarios.size(); i++){
+//                usuarios.put(listaFuncionarios.get(i).getLogin(), listaFuncionarios.get(i).getSenhaFuncionario());
+//            }
+//        } catch (Exception erro){
+//            Logger.getLogger(locadoraveiculo.Login.class.getName()).log(Level.SEVERE, null, erro);
+//        }
+//        
+//        String entradaLogin = txtLogin.getText();
+//        String entradaSenha = new String(txtSenha.getPassword());
+//        try{
+//            String senha = usuarios.get(entradaLogin);
+//            if(senha.equals(entradaSenha)){
+//                new Menus().setVisible(true);
+//                this.setVisible(false);
+//            }
+//            else{
+//                txtSenha.setText("");
+//                JOptionPane.showMessageDialog(null,"Senha e/ou Login Incorretos!\n Tente novamente");
+//            }
+//        } catch (Exception erro) {
+//            txtLogin.setText("");
+//            txtSenha.setText("");
+//            
+//            Logger.getLogger(CadastroFuncionario.class.getName()).log(Level.SEVERE, null, erro);
+//            
+//            JOptionPane.showMessageDialog(null,"Senha e/ou Login Incorretos!\n Tente novamente");
+//        }
+//        
     }//GEN-LAST:event_btnEntrarActionPerformed
 
     /**
