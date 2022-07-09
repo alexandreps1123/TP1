@@ -7,8 +7,8 @@ package telas;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
+import java.util.*;
+import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import locadoraveiculo.Cliente;
 import metodostelas.CarregarTabela;
@@ -32,10 +32,7 @@ public class CadastroCliente extends javax.swing.JFrame {
      */
     public CadastroCliente() {
         initComponents();
-        
-        //Maximizar a tela
-        this.setExtendedState(MAXIMIZED_BOTH);
-        
+                
         listaClientes = new ArrayList();
         
         //desabilitar campos de texto
@@ -44,8 +41,11 @@ public class CadastroCliente extends javax.swing.JFrame {
                     txtCnhCliente, txtDataPrimeiraCnhCliente);
         
         //desabilitar e habilitar botoes
-        GerenciarBotoes.iniciarTela(btnNovoCliente, btnSalvarCliente, btnEditarCliente, 
-                btnCancelarCliente, btnPesquisarCliente, btnExcluirCliente, btnOkCliente);
+        GerenciarBotoes botoes = new GerenciarBotoes(btnNovoCliente, btnSalvarCliente,
+                                        btnEditarCliente, btnPesquisarCliente,
+                                        btnExcluirCliente, btnCancelarCliente, btnOkCliente);
+        
+        botoes.iniciarTela();
     }
 
     /**
@@ -86,6 +86,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cliente");
         setIconImage(new javax.swing.ImageIcon(getClass().getResource("/imagens/carblue-icon-32.png")).getImage());
+        setPreferredSize(new java.awt.Dimension(800, 640));
 
         btnSalvarCliente.setText("Salvar");
         btnSalvarCliente.setToolTipText("Salvar dados do cliente");
@@ -301,7 +302,7 @@ public class CadastroCliente extends javax.swing.JFrame {
                         .addComponent(btnPesquisarCliente)
                         .addGap(18, 18, 18)
                         .addComponent(btnExcluirCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(pnlDadosCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlDadosCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 638, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(btnVoltarFromCliente2Menu, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -483,9 +484,11 @@ public class CadastroCliente extends javax.swing.JFrame {
                     txtCnhCliente, txtDataPrimeiraCnhCliente);
         
         //desabilitar e habilitar botoes
-        GerenciarBotoes.iniciarTela(btnNovoCliente, btnSalvarCliente, btnEditarCliente, 
-                btnCancelarCliente, btnPesquisarCliente, btnExcluirCliente, btnOkCliente);
+        GerenciarBotoes botoes = new GerenciarBotoes(btnNovoCliente, btnSalvarCliente,
+                                        btnEditarCliente, btnPesquisarCliente,
+                                        btnExcluirCliente, btnCancelarCliente, btnOkCliente);
         
+        botoes.iniciarTela();
     }//GEN-LAST:event_btnExcluirClienteActionPerformed
 
     private void btnPesquisarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarClienteActionPerformed

@@ -1,8 +1,60 @@
 package metodostelas;
 
+import java.util.Map;
 import javax.swing.JButton;
 
 public class GerenciarBotoes {
+    //atributos
+    private JButton novo;
+    private JButton salvar;
+    private JButton editar;
+    private JButton pesquisar;
+    private JButton excluir;
+    private JButton cancelar;
+    private JButton ok;
+
+    public GerenciarBotoes(JButton novo, JButton salvar, JButton editar, 
+                            JButton pesquisar, JButton excluir, 
+                            JButton cancelar, JButton ok) {
+        this.novo = novo;
+        this.salvar = salvar;
+        this.editar = editar;
+        this.pesquisar = pesquisar;
+        this.excluir = excluir;
+        this.cancelar = cancelar;
+        this.ok = ok;
+    }
+    
+    //botoes habilitados ou desabilitados ao inciar
+    public void iniciarTela() {        
+        if (this.novo != null) {
+            this.novo.setEnabled(true);
+        }
+        
+        if (this.salvar != null) {
+            this.salvar.setEnabled(false);
+        }
+        
+        if (this.editar != null) {
+            this.editar.setEnabled(false);
+        }
+        
+        if (this.pesquisar != null) {
+            this.pesquisar.setEnabled(true);
+        }
+        
+        if (this.excluir != null) {
+            this.excluir.setEnabled(false);
+        }
+        
+        if (this.cancelar != null) {
+            this.cancelar.setEnabled(false);
+        }
+        
+        if (this.ok != null) {
+            this.ok.setEnabled(false);
+        }
+    }
     
     //botoes habilitados ou desabilitados ao inciar
     public static void iniciarTela(JButton novo, JButton salvar,
