@@ -89,3 +89,4 @@ WARNING: Unmatched cancel notification for request id 1688
 2023.01.07 05:05:21 WARN  no build target for: /home/alexandre/Documents/estudos/TP1/carrental/src/model/services/BrazilTaxService.java[0m
 2023.01.07 05:05:26 WARN  no build target for: /home/alexandre/Documents/estudos/TP1/carrental/src/model/services/RentalService.java[0m
 2023.01.07 05:05:36 WARN  no build target for: /home/alexandre/Documents/estudos/TP1/carrental/src/model/services/RentalService.java[0m
+2023.01.07 05:23:55 INFO  shutting down Metals[0m
