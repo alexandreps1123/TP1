@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="LocadoraVeiculos">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/dist/LocadoraVeiculos.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -1,7 +1,10 @@
-*nbproject/private/
+*nbproject/
 *build/
 *dist/
 
-*.vscode
-*.metals
+*.vscode/
+*.metals/
 *.class
+
+*.xml
+*manifest.mf
