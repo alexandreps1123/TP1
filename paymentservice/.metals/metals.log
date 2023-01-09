@@ -1427,3 +1427,4 @@ WARNING: Unmatched cancel notification for request id 1839
                                     ^
 2 errors[0m
 2023.01.07 05:57:44 WARN  no build target for: /home/alexandre/Documents/estudos/TP1/paymentservice/src/entities/Installment.java[0m
+2023.01.07 06:24:59 INFO  shutting down Metals[0m
